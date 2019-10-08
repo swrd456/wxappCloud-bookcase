@@ -1,3 +1,11 @@
-<view>
-  <text>已添加书籍显示页面</text>
+<view wx:for="{{book_data}}" wx:for-item="book" wx:key="_id">
+  <van-card
+  price="{{book.price}}"
+  desc="{{book.author}}"
+  title="{{book.name}}"
+  thumb="{{book.image}}">
+    <view slot="tags">
+      <van-tag type="primary">{{book.publisher}}</van-tag>
+    </view>
+  </van-card>
 </view>

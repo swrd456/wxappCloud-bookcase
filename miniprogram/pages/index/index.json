@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-        "index-tabbar": "../../components/index-tabbar/index",
-        "home-panel": "../home/index"
+      "index-tabbar": "../../components/index-tabbar/index",
+      "home-panel": "../home/index"
   }
 }

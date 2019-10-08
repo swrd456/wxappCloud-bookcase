@@ -8,6 +8,10 @@ Component({
       type: Array,
       value: []
     },
+    book_data: {
+      type: Array,
+      value: []
+    }
   },
   methods: {
     onChange(event) {

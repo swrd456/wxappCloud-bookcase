@@ -1,3 +1,8 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "van-card": "../../vant/card/index",
+    "van-tab": "../../vant/tab/index",
+    "van-tag": "../../vant/tag/index"
+  }
 }
