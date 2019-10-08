@@ -4,7 +4,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    activeTab: 'home',
+    panels: [
+      { name: 'home', icon: 'home-o', label: '首页' },
+      { name: 'category', icon: 'label-o', badge: '5', label: '分类' },
+      { name: 'msgs', icon: 'comment-o', badge: '99+', label: '留言' },
+      { name: 'my', icon: 'user-o', label: '我的' }
+    ]
   },
 
   /**
@@ -61,5 +67,10 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  onTabChange(event) {
+    this.setData({
+      activeTab: event.detail
+    })
   }
 })

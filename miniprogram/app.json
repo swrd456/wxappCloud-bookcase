@@ -11,6 +11,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar":{
+    "custom": true,
     "list":[{
       "pagePath":"pages/index/index",
       "text":"我的藏书"

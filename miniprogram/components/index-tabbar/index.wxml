@@ -1,0 +1,14 @@
+<cover-view class="container">
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item
+      wx:for="{{panels}}"
+      wx:for-index="index"
+      wx:for-item="item"
+      wx:key="{{index}}"
+      name="{{item.name}}"
+      icon="{{item.icon}}"
+      info="{{item.badge}}">
+      {{item.label}}
+    </van-tabbar-item>
+  </van-tabbar>
+</cover-view>

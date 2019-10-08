@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+        "index-tabbar": "../../components/index-tabbar/index",
+        "home-panel": "../home/index"
+  }
 }
