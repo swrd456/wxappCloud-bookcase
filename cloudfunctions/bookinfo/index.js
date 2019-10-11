@@ -6,7 +6,7 @@ cloud.init()
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  console.info('begin call bookinfo.');
+  console.log('begin call bookinfo.');
   console.log(event);
   console.log(context);
   const wxContext = cloud.getWXContext();

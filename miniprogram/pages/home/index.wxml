@@ -4,8 +4,11 @@
   desc="{{book.author}}"
   title="{{book.name}}"
   thumb="{{book.image}}">
-    <view slot="tags">
-      <van-tag type="primary">{{book.publisher}}</van-tag>
-    </view>
+  <view slot="tags">
+    <van-tag type="primary">{{book.publisher}}</van-tag>
+  </view>
+  <view slot="footer">
+    <van-button size="small" plain type="primary" bind:click="viewDetail">查看详情</van-button>
+  </view>
   </van-card>
 </view>

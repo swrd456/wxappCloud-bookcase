@@ -7,8 +7,7 @@ Page({
     activeTab: 'home',
     panels: [
       { name: 'home', icon: 'home-o', label: '首页' },
-      { name: 'category', icon: 'label-o', badge: '5', label: '分类' },
-      { name: 'msgs', icon: 'comment-o', badge: '99+', label: '留言' },
+      { name: 'category', icon: 'qr', label: '扫码添加' },
       { name: 'my', icon: 'user-o', label: '我的' }
     ],
     book_data:[
@@ -24,7 +23,6 @@ Page({
     db.collection('mybook').where({
       _openid: '' // 填入当前用户 openid
     }).get().then(res => {
-      console.log(res.data);
       this.setData({
         book_data: res.data
       })
@@ -81,14 +79,13 @@ Page({
   },
   onTabChange(event) {
     if ('home' == event.detail) {
-      console.info(event.detail);
       // 查询数据库
       const db = wx.cloud.database()
       db.collection('mybook').where({
         _openid: '' // 填入当前用户 openid
       }).get({
         success: function (res) {
-          console.log(res.data);
+          // console.log(res.data);
           this.setData({
             book_data: res.data
           })

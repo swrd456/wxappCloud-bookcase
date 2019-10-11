@@ -39,14 +39,14 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
+					"name": "entry",
+					"pathName": "pages/index/index",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "pages/scanCode/scanCode",
-					"pathName": "pages/scanCode/scanCode",
+					"name": "home",
+					"pathName": "pages/home/index",
 					"scene": null
 				}
 			]
