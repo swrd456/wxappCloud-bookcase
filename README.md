@@ -7,6 +7,7 @@
 - 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
 
 ![](https://raw.githubusercontent.com/swrd456/img-storage/master/微信截图_20191007231826.png)
+![](https://github.com/swrd456/img-storage/blob/master/%E6%88%91%E7%9A%84%E4%B9%A6%E6%9F%9C%E6%88%AA%E5%9B%BE.png?raw=true)
 
 ## 参考文档
 
