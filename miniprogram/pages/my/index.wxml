@@ -1,0 +1,3 @@
+<view>
+  <van-button size="small" plain type="primary" bind:click="viewDetail">查看详情</van-button>
+</view>

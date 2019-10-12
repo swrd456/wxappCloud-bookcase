@@ -1,15 +1,35 @@
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    activeTab: 'home',
-    panels: [
-      { name: 'home', icon: 'home-o', label: '首页' },
-      { name: 'category', icon: 'qr', label: '扫码添加' },
-      { name: 'my', icon: 'user-o', label: '我的' }
-    ],
+    choose_index: 0,
+    tabbar_data: {
+      "color": "#999999",
+      "selectedColor": "#7788dd",
+      "borderStyle": "#dcdcdc",
+      "backgroundColor": "#ffffff",
+      "list": [{
+        "key": "home",
+        "iconPath": "/images/icon_home.png",
+        "selectedIconPath": "/images/icon_home_active.png",
+        "text": "首页"
+      },
+      {
+        "key": "new",
+        "iconPath": "/images/icon_plus_big.png",
+        "iconType": "big overflow circle shadow",
+        "choose": "disable",
+        "text": "扫码加书"
+      },
+      {
+        "key": "me",
+        "iconPath": "/images/icon_me.png",
+        "selectedIconPath": "/images/icon_me_active.png",
+        "text": "我的"
+      }
+      ]
+    },
     book_data:[
     ]
   },
@@ -78,7 +98,9 @@ Page({
     
   },
   onTabChange(event) {
-    if ('home' == event.detail) {
+    console.info(event)
+    if ('home' == event.detail.key) {
+      console.info('************')
       // 查询数据库
       const db = wx.cloud.database()
       db.collection('mybook').where({
@@ -92,8 +114,10 @@ Page({
         }
       })
     }
+
+    console.info(event.detail.index);
     this.setData({
-      activeTab: event.detail
+      choose_index: event.detail.index
     })
   }
 })

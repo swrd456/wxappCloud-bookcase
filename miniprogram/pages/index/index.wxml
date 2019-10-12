@@ -1,7 +1,5 @@
 <view class="container">
-  <home-panel wx:if="{{activeTab == 'home'}}" book_data="{{book_data}}">首页</home-panel>
-  <!-- <category-panel wx:if="{{activeTab == 'category'}}">分类</category-panel> -->
-  <!-- <msgs-panel wx:if="{{activeTab == 'msgs'}}">留言</msgs-panel>
-  <my-panel wx:if="{{activeTab == 'my'}}">我的</my-panel> -->
-  <index-tabbar active="{{activeTab}}" panels="{{panels}}" bind:changeTab="onTabChange"></index-tabbar>
+  <home-panel wx:if="{{choose_index==0}}" book_data="{{book_data}}">首页</home-panel>
+  <my wx:if="{{choose_index==2}}">我的</my>
+  <index-tabbar bindchange="onTabChange" tabbar_data="{{tabbar_data}}"></index-tabbar>
 </view>

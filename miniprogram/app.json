@@ -10,19 +10,5 @@
     "navigationBarTitleText": "私家书柜",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "custom": true,
-    "color": "#FFFF",
-    "selectedColor": "#FFFF",
-    "backgroundColor": "#FFFF",
-    "list":[{
-      "pagePath": "pages/index/index",
-      "text":"首页"
-    },
-    {
-      "pagePath": "pages/home/index",
-      "text": "主页"
-    }]
-  },
   "sitemapLocation": "sitemap.json"
 }

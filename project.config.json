@@ -36,20 +36,7 @@
 		},
 		"miniprogram": {
 			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "entry",
-					"pathName": "pages/index/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "home",
-					"pathName": "pages/home/index",
-					"scene": null
-				}
-			]
+			"list": []
 		}
 	}
 }
