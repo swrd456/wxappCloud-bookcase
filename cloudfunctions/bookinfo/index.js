@@ -11,7 +11,7 @@ exports.main = async (event, context) => {
   console.log(context);
   const wxContext = cloud.getWXContext();
 
-  let res = rp('http://49.234.70.238:9001/book/worm/isbn?isbn=' + event.isbn).then(html => {
+  let res = rp('http://isbn.szmesoft.com/isbn/query?isbn=' + event.isbn).then(html => {
     if (html == undefined || html == null) {
       coonsole.log("failed to get book info.");
     }

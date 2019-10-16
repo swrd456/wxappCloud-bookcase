@@ -3,7 +3,7 @@ Component({
   },
   methods: {
     viewDetail(event) {
-      console.log(event);
+      // console.log(event);
     }
   }
 })

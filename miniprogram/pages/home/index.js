@@ -7,7 +7,7 @@ Component({
   },
   methods: {
     viewDetail(event) {
-      console.log(event.currentTarget.id);
+      // console.log(event.currentTarget.id);
       wx.navigateTo({
         url: '/pages/bookDetail/index?id=' + event.currentTarget.id
       })

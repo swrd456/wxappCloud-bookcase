@@ -98,9 +98,9 @@ Page({
     
   },
   onTabChange(event) {
-    console.info(event)
+    // console.info(event)
     if ('home' == event.detail.key) {
-      console.info('************')
+      // console.info('************')
       // 查询数据库
       const db = wx.cloud.database()
       db.collection('mybook').where({

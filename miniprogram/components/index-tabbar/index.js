@@ -19,7 +19,7 @@ Component({
     change: function (e) {
       var index = e.currentTarget.dataset.index * 1
       var item = this.data.tabbar_data.list[index]
-      console.info(item)
+      // console.info(item)
       var choose = item.choose
 
       let _this = this;
@@ -41,14 +41,14 @@ Component({
                 isbn: res.result
               },
               success: res => {
-                console.log(res.result);
+                // console.log(res.result);
                 // console.log(res.result.data);
                 let resultData = JSON.parse(res.result);
-                console.log(resultData.data[0]);
+                console.log(resultData);
                 const db = wx.cloud.database();
                 const book = db.collection('mybook');
                 db.collection('mybook').add({
-                  data: resultData.data[0]
+                  data: resultData
                 }).then(res => {
                   console.log(res);
                 }).catch(err => {
@@ -69,14 +69,11 @@ Component({
           }
         })
       }
-      
+
       this.triggerEvent('change', {
         key: item.key,
         index: index
       })
-    },
-    onChange(event) {
-     
     }
   }
 })

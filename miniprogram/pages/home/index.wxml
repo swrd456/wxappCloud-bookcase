@@ -1,9 +1,10 @@
 <view wx:for="{{book_data}}" wx:for-item="book" wx:key="_id">
+<van-cell-group>
   <van-card
   price="{{book.price}}"
   desc="{{book.author}}"
   title="{{book.name}}"
-  thumb="{{book.image}}">
+  thumb="{{book.PhotoUrl}}">
   <view slot="tags">
     <van-tag type="primary">{{book.publisher}}</van-tag>
   </view>
@@ -11,4 +12,5 @@
     <van-button size="small" plain type="primary" id="{{book._id}}" bind:click="viewDetail">查看详情</van-button>
   </view>
   </van-card>
+</van-cell-group>
 </view>
