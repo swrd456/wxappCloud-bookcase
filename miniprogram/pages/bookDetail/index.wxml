@@ -1,0 +1,22 @@
+<view>
+  <van-cell-group>
+    <van-cell-group>
+      <image mode='aspectFit' src='{{book.image}}'></image>
+    </van-cell-group>
+    <van-cell-group>
+      <van-cell title="书籍介绍" label='{{book.introduction}}' />
+    </van-cell-group>
+    <van-cell-group>
+      <van-cell title="分类" value='{{book.title}}' border="{{ false }}" />
+    </van-cell-group>
+    <van-cell-group>
+      <van-cell title="作者" value='{{book.author}}' border="{{ false }}" />
+    </van-cell-group>
+    <van-cell-group>
+      <van-cell title="出版社" value='{{book.publisher}}' border="{{ false }}" />
+    </van-cell-group>
+    <van-cell-group>
+      <van-cell title="价格" value='{{book.price}}' border="{{ false }}" />
+    </van-cell-group>
+  </van-cell-group>
+</view>

@@ -8,7 +8,7 @@
     <van-tag type="primary">{{book.publisher}}</van-tag>
   </view>
   <view slot="footer">
-    <van-button size="small" plain type="primary" bind:click="viewDetail">查看详情</van-button>
+    <van-button size="small" plain type="primary" id="{{book._id}}" bind:click="viewDetail">查看详情</van-button>
   </view>
   </van-card>
 </view>

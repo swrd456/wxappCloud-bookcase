@@ -115,7 +115,7 @@ Page({
       })
     }
 
-    console.info(event.detail.index);
+    // console.info(event.detail.index);
     this.setData({
       choose_index: event.detail.index
     })
